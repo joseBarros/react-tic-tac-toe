@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8219a201-dfdf-4d15-9e1f-c24e47b74dea" name="Default" comment="Game Completed:&#10;Added immutability">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-    </list>
+    <list default="true" id="8219a201-dfdf-4d15-9e1f-c24e47b74dea" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,8 +23,8 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="83" lean-forward="true" selection-start-line="83" selection-end-line="83" />
+            <state relative-caret-position="57">
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -135,7 +132,7 @@
       <updated>1541516101125</updated>
       <workItem from="1541516102517" duration="6618000" />
       <workItem from="1541523713427" duration="2213000" />
-      <workItem from="1541766655513" duration="9428000" />
+      <workItem from="1541766655513" duration="10670000" />
     </task>
     <task id="LOCAL-00001" summary="board functional;">
       <created>1541768499643</created>
@@ -151,15 +148,21 @@
       <option name="project" value="LOCAL" />
       <updated>1541772429886</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Game Completed:&#10;Added Time Travel">
+      <created>1541779526327</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1541779526327</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18259000" />
+    <option name="totallyTimeSpent" value="19501000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1667" y="-2" width="1853" height="1082" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12520237" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -170,7 +173,7 @@
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32946146" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.6378036" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -191,7 +194,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="board functional;" />
     <MESSAGE value="Game Completed:&#10;Added immutability" />
-    <option name="LAST_COMMIT_MESSAGE" value="Game Completed:&#10;Added immutability" />
+    <MESSAGE value="Game Completed:&#10;Added Time Travel" />
+    <option name="LAST_COMMIT_MESSAGE" value="Game Completed:&#10;Added Time Travel" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/index.css">
@@ -237,8 +241,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="83" lean-forward="true" selection-start-line="83" selection-end-line="83" />
+        <state relative-caret-position="57">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
