@@ -14,42 +14,45 @@ Immutable data can easily determine if changes have been made which helps to det
 The Square components no longer maintain state, the Square components receive values from the Board component and inform the Board component when they’re clicked.
 In React terms, the Square components are now controlled components.
  */
-class Square extends React.Component {
-    // // To “remember” that it got clicked, and fill it with an “X” mark. To “remember” things, components use state.
-    // // store the current value of the Square in this.state, and change it when the Square is clicked.
-    // constructor(props){
-    //     super(props);
-    //     this.state = {
-    //         value: null,
-    //     }
-    // }
-    render() {
-        return (
-            //onClick={() => CODE} equals onClick={() => CODE}
-            // By calling this.setState from an onClick handler in the Square’s render method, we tell React to re-render that Square whenever its <button> is clicked.
-            <button className="square" onClick={() => this.props.onClick()}>
-                {this.props.value}
-            </button>
-        );
-    }
+/*
+Function Components - are a simpler way to write components that only contain a render method and don’t have their own state.
+Instead of defining a class which extends React.Component, we can write a function that takes props as input and returns what should be rendered.
+we also changed onClick={() => this.props.onClick()} to a shorter onClick={props.onClick}
+In a class, we used an arrow function to access the correct this value, but in a function component we don’t need to worry about this.
+*/
+function Square(props) {
+    return (
+        <button className="square" onClick={props.onClick}>
+            {props.value}
+        </button>
+    );
 }
 
 class Board extends React.Component {
     // To collect data from multiple children, or communicate with each other, you need to declare the shared state in their parent component.
     // The parent component can pass the state back down to the children by using props. Keeps the child components in sync with each other and with the parent
+    // xIsNext (a boolean) will be flipped to determine which player goes next and the game’s state will be saved.
     constructor(props) {
         super(props);
         this.state = {
             squares: Array(9).fill(null),
+            xIsNext: true,
         };
     }
 
     // convention to use on[Event] names for props which represent events and handle[Event] for the methods which handle the events.
     handleClick(i) {
         // Immutability => .slice() to create a copy of the squares array to modify instead of modifying the existing array.
-            const squares = this.state.squares.slice();
-        squares[i] = 'X';
-        this.setState({squares: squares});
+        const squares = this.state.squares.slice();
+        //ignoring a click if someone has won the game or if a Square is already filled
+        if(calculateWinner(squares) || squares[i]){
+            return;
+        }
+        squares[i] = this.state.xIsNext ? 'X' : 'O';
+        this.setState({
+            squares: squares,
+            xIsNext: !this.state.xIsNext,
+        });
     }
 
     // Since state is considered to be private to a component that defines it, we cannot update the Board’s state directly from Square.
@@ -67,7 +70,15 @@ class Board extends React.Component {
     }
 
     render() {
-        const status = 'Next player: X';
+        //check if a player has won
+        const winner = calculateWinner(this.state.squares);
+        let status;
+        if (winner){
+            status = 'Winner: ' + winner;
+        }
+        else{
+            status = 'Next player: ' + (this.state.xIsNext ? 'X' : 'O');
+        }
 
         return (
             <div>
@@ -114,3 +125,24 @@ ReactDOM.render(
     <Game/>,
     document.getElementById('root')
 );
+
+function calculateWinner(squares) {
+    const lines = [
+        [0, 1, 2],
+        [3, 4, 5],
+        [6, 7, 8],
+        [0, 3, 6],
+        [1, 4, 7],
+        [2, 5, 8],
+        [0, 4, 8],
+        [2, 4, 6],
+    ];
+
+    for (let i = 0; i < lines.length; i++){
+        const [a, b, c] = lines[i];
+        if(squares[a] && squares[a] === squares[b] && squares[a] === squares[c]){
+            return squares[a];
+        }
+    }
+    return null;
+}
