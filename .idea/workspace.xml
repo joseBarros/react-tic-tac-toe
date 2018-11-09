@@ -1,20 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8219a201-dfdf-4d15-9e1f-c24e47b74dea" name="Default" comment="board functional;">
-      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/my-app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/react-tic-tac-toe.iml" afterDir="false" />
+    <list default="true" id="8219a201-dfdf-4d15-9e1f-c24e47b74dea" name="Default" comment="Game Completed:&#10;Added immutability">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/serviceWorker.js" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -37,8 +26,8 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="5" column="2" lean-forward="true" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
+            <state relative-caret-position="76">
+              <caret line="83" lean-forward="true" selection-start-line="83" selection-end-line="83" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -146,12 +135,27 @@
       <updated>1541516101125</updated>
       <workItem from="1541516102517" duration="6618000" />
       <workItem from="1541523713427" duration="2213000" />
-      <workItem from="1541766655513" duration="1738000" />
+      <workItem from="1541766655513" duration="9428000" />
     </task>
+    <task id="LOCAL-00001" summary="board functional;">
+      <created>1541768499643</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1541768499643</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Game Completed:&#10;Added immutability">
+      <created>1541772429886</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1541772429886</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10569000" />
+    <option name="totallyTimeSpent" value="18259000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1667" y="-2" width="1853" height="1082" extended-state="6" />
@@ -186,7 +190,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="board functional;" />
-    <option name="LAST_COMMIT_MESSAGE" value="board functional;" />
+    <MESSAGE value="Game Completed:&#10;Added immutability" />
+    <option name="LAST_COMMIT_MESSAGE" value="Game Completed:&#10;Added immutability" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/index.css">
@@ -232,8 +237,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="2" lean-forward="true" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
+        <state relative-caret-position="76">
+          <caret line="83" lean-forward="true" selection-start-line="83" selection-end-line="83" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
